@@ -1,0 +1,14 @@
+#include <Eigen/Core>
+#include <ANN/ANN.h>
+
+int main(){
+    std::cout << "Test de Eigen : matrice nulle 3x3" << std::endl;
+    Eigen::MatrixXd data(3, 3);
+    std::cout << data << std::endl;
+    std::cout << "Success!" << std::endl;
+
+    std::cout << "Test de ANN : allocation d'une matrice de points (adresse mÃ©moire)" << std::endl;
+	ANNpointArray dataPts = annAllocPts(3, 2);
+    std::cout << dataPts << std::endl;
+    std::cout << "Success!" << std::endl;
+}
